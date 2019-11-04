@@ -1,13 +1,43 @@
 import AppScreen from './app.screen';
 
 const SELECTORS = {
-    HOME_SCREEN: '~Home-screen'
+    MAKE: '~make',
+    YEAR: '~year',
+    MODEL: '~model',
+    TRIM: '~trim',
+    DETAILS_BUTTON: '~details',
+    RESET_BUTTON: '~reset'
 };
 
 class HomeScreen extends AppScreen {
     constructor () {
-        super(SELECTORS.HOME_SCREEN);
+        super(SELECTORS.MAKE);
     }
+
+    get make () {
+        return $(SELECTORS.MAKE);
+    }
+
+    get year () {
+        return $(SELECTORS.YEAR);
+    }
+
+    get model () {
+        return $(SELECTORS.MODEL);
+    }
+
+    get trim () {
+        return $(SELECTORS.TRIM);
+    }
+
+    get details () {
+        return $(SELECTORS.DETAILS_BUTTON);
+    }
+
+    get reset () {
+        return $(SELECTORS.RESET_BUTTON);
+    }
+
 }
 
 export default new HomeScreen();
