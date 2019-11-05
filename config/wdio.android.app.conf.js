@@ -23,9 +23,8 @@ config.capabilities = [
         // This is `appium:` for all Appium Capabilities which can be found here
         'appium:deviceName': 'MI5',
 		'appium:platformVersion': '8.0.0',
-		'appium:udid': '26060fa3',		
-        //'appium:platformVersion': '7.0.0',
-		//'appium:udid': '192.168.0.206:5555',
+        //'appium:deviceName': 'VirtualBox',	
+        //'appium:platformVersion': '7.1.2',	
         // `automationName` will be mandatory, see
         // https://github.com/appium/appium/releases/tag/v1.13.0
         'appium:automationName': 'UiAutomator2',
